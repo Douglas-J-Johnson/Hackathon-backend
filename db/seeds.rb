@@ -5,9 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+CosmonautMission.destroy_all
 Cosmonaut.destroy_all
 Mission.destroy_all
-#CosmonautMission.destroy_all
+
 ag = Cosmonaut.create(first_name: "Ahmed", last_name: "Gaberov", died_in_space: 1, picture: "https://miro.medium.com/fit/c/256/256/2*HTTfSN0OfLCRJmxp4KEVRA.jpeg")
 yg = Cosmonaut.create(first_name: "Yuri", last_name: "Gagarin", died_in_space: 0, picture: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Gagarin_in_Sweden.jpg")
 nb = Cosmonaut.create(first_name: "Nikolai", last_name: "Budarin", died_in_space: 0, picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Budarin%2C_Nikolai_M.jpg/800px-Budarin%2C_Nikolai_M.jpg")
@@ -21,7 +22,7 @@ lp = Cosmonaut.create(first_name: "Leonid", last_name: "Popov", died_in_space: 0
 ss = Cosmonaut.create(first_name: "Svetlana", last_name: "Savitskaya", died_in_space: 0, picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Svetlana_Savitskaya%2C_7_December_2018.jpg/220px-Svetlana_Savitskaya%2C_7_December_2018.jpg")
 as = Cosmonaut.create(first_name: "Aleksandr", last_name: "Serebrov", died_in_space: 0, picture: "https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Aleksandr_Aleksandrovich_Serebrov.jpg/220px-Aleksandr_Aleksandrovich_Serebrov.jpg")
 vt = Cosmonaut.create(first_name: "Valentina", last_name: "Tereshkova", died_in_space: 0, picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Valentina_Tereshkova_%282017-03-06%29.jpg/220px-Valentina_Tereshkova_%282017-03-06%29.jpg")
-l = Cosmonaut.create(first_name: "Laika", last_name: nil, died_in_space: 1, picture: "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Laika_%28Soviet_dog%29.jpg/220px-Laika_%28Soviet_dog%29.jpg")
+l = Cosmonaut.create(first_name: "Laika", last_name: "Dog", died_in_space: 1, picture: "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Laika_%28Soviet_dog%29.jpg/220px-Laika_%28Soviet_dog%29.jpg")
 vk = Cosmonaut.create(first_name: "Vladimir", last_name: "Komarov", died_in_space: 1, picture: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vladimir_Mikhailovich_Komarov_photo_portrait.jpg/220px-Vladimir_Mikhailovich_Komarov_photo_portrait.jpg")
 
 m01 = Mission.create(name: "Expedition 1 (Soyuz TM-31, STS-102)", spacecraft: "International Space Station", duration: "140 days, 23 hours, 38 minutes", orbits: nil, start_date: "November 2, 2000")
