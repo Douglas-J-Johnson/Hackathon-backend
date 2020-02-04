@@ -1,0 +1,3 @@
+class CosmonautMissionsController < ApplicationController
+    
+end
