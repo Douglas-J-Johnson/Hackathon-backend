@@ -1,0 +1,2 @@
+class Cosmonaut < ApplicationRecord
+end
